@@ -5,7 +5,7 @@
 import config from "./deno.json" assert { type: "json" };
 import { DecoManifest } from "$live/types.ts";
 
-import * as $$$$0 from "./routes/api/[...catchall].tsx";
+import * as $$$$0 from "./routes/index.ts";
 import * as $$$$1 from "./routes/_app.tsx";
 import * as $$$$$0 from "./islands/ShippingSimulation.tsx";
 import * as $$$$$1 from "./islands/HeaderButton.tsx";
@@ -87,7 +87,7 @@ import * as i2$$$8 from "deco-sites/std/sections/SEOPDP.tsx";
 
 const manifest: DecoManifest = {
   "routes": {
-    "./routes/api/[...catchall].tsx": $$$$0,
+    "./routes/index.ts": $$$$0,
     "./routes/_app.tsx": $$$$1,
     "./routes/_middleware.ts": $live_middleware,
     "./routes/live/workbench.ts": $live_workbench,
