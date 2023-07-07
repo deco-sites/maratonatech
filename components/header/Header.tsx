@@ -3,7 +3,6 @@ import type { Image } from "deco-sites/std/components/types.ts";
 import type { EditableProps as SearchbarProps } from "deco-sites/fashion/components/search/Searchbar.tsx";
 import type { LoaderReturnType } from "$live/types.ts";
 import type { Product, Suggestion } from "deco-sites/std/commerce/types.ts";
-import type { ClientConfigVTEX } from "deco-sites/std/functions/vtexConfig.ts";
 
 import Alert from "./Alert.tsx";
 import Navbar from "./Navbar.tsx";
@@ -50,7 +49,7 @@ export interface Props {
   /**
    * @description vtex config used for search autocompletion;
    */
-  configVTEX?: LoaderReturnType<ClientConfigVTEX>;
+  configVTEX?: LoaderReturnType<null>;
 }
 
 function Header(
