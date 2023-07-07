@@ -3,7 +3,7 @@ import Icon from "deco-sites/fashion/components/ui/Icon.tsx";
 import Text from "deco-sites/fashion/components/ui/Text.tsx";
 import Button from "deco-sites/fashion/components/ui/Button.tsx";
 import QuantitySelector from "deco-sites/fashion/components/ui/QuantitySelector.tsx";
-import { useCart } from "deco-sites/std/commerce/vtex/hooks/useCart.ts";
+import { useCart } from "deco-sites/std/packs/vtex/hooks/useCart.ts";
 import { formatPrice } from "deco-sites/fashion/sdk/format.ts";
 import { sendAnalyticsEvent } from "deco-sites/std/commerce/sdk/sendAnalyticsEvent.ts";
 
