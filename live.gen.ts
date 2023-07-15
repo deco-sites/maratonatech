@@ -4,30 +4,30 @@
 
 import { DecoManifest } from "$live/types.ts";
 import * as $$$$0 from "./routes/_app.tsx";
-import * as $$$$$0 from "./islands/ShippingSimulation.tsx";
+import * as $$$$$0 from "./islands/SliderJS.tsx";
 import * as $$$$$1 from "./islands/HeaderButton.tsx";
-import * as $$$$$2 from "./islands/SendEventButton.tsx";
-import * as $$$$$3 from "./islands/HeaderSearchMenu.tsx";
+import * as $$$$$2 from "./islands/ViewSendEvent.tsx";
+import * as $$$$$3 from "./islands/SendEventButton.tsx";
 import * as $$$$$4 from "./islands/AddToCartButton.tsx";
-import * as $$$$$5 from "./islands/HeaderModals.tsx";
-import * as $$$$$6 from "./islands/SliderJS.tsx";
-import * as $$$$$7 from "./islands/ProductImageZoom.tsx";
-import * as $$$$$8 from "./islands/ViewSendEvent.tsx";
-import * as $$$$$9 from "./islands/SearchControls.tsx";
-import * as $$$$$$$$0 from "./sections/LinkTree.tsx";
-import * as $$$$$$$$1 from "./sections/DesignSystem.story.tsx";
-import * as $$$$$$$$2 from "./sections/Features.tsx";
-import * as $$$$$$$$3 from "./sections/BannerPLP.tsx";
-import * as $$$$$$$$4 from "./sections/BannerGrid.tsx";
-import * as $$$$$$$$5 from "./sections/SearchResult.tsx";
+import * as $$$$$5 from "./islands/ShippingSimulation.tsx";
+import * as $$$$$6 from "./islands/ProductImageZoom.tsx";
+import * as $$$$$7 from "./islands/SearchControls.tsx";
+import * as $$$$$8 from "./islands/HeaderModals.tsx";
+import * as $$$$$9 from "./islands/HeaderSearchMenu.tsx";
+import * as $$$$$$$$0 from "./sections/Footer.tsx";
+import * as $$$$$$$$1 from "./sections/WhatsApp.tsx";
+import * as $$$$$$$$2 from "./sections/ProductDetails.tsx";
+import * as $$$$$$$$3 from "./sections/CookieConsent.tsx";
+import * as $$$$$$$$4 from "./sections/LinkTree.tsx";
+import * as $$$$$$$$5 from "./sections/BannerGrid.tsx";
 import * as $$$$$$$$6 from "./sections/ProductShelf.tsx";
-import * as $$$$$$$$7 from "./sections/Footer.tsx";
-import * as $$$$$$$$8 from "./sections/CookieConsent.tsx";
-import * as $$$$$$$$9 from "./sections/Header.tsx";
-import * as $$$$$$$$10 from "./sections/ProductDetails.tsx";
-import * as $$$$$$$$11 from "./sections/Highlights.tsx";
-import * as $$$$$$$$12 from "./sections/WhatsApp.tsx";
-import * as $$$$$$$$13 from "./sections/Carousel.tsx";
+import * as $$$$$$$$7 from "./sections/Header.tsx";
+import * as $$$$$$$$8 from "./sections/Carousel.tsx";
+import * as $$$$$$$$9 from "./sections/Highlights.tsx";
+import * as $$$$$$$$10 from "./sections/BannerPLP.tsx";
+import * as $$$$$$$$11 from "./sections/Features.tsx";
+import * as $$$$$$$$12 from "./sections/DesignSystem.story.tsx";
+import * as $$$$$$$$13 from "./sections/SearchResult.tsx";
 import * as $live_workflows from "$live/routes/live/workflows/run.ts";
 import * as $live_middleware from "$live/routes/_middleware.ts";
 import * as $live_workbench from "$live/routes/live/workbench.ts";
@@ -172,14 +172,14 @@ const manifest = {
   "islands": {
     "./islands/AddToCartButton.tsx": $$$$$4,
     "./islands/HeaderButton.tsx": $$$$$1,
-    "./islands/HeaderModals.tsx": $$$$$5,
-    "./islands/HeaderSearchMenu.tsx": $$$$$3,
-    "./islands/ProductImageZoom.tsx": $$$$$7,
-    "./islands/SearchControls.tsx": $$$$$9,
-    "./islands/SendEventButton.tsx": $$$$$2,
-    "./islands/ShippingSimulation.tsx": $$$$$0,
-    "./islands/SliderJS.tsx": $$$$$6,
-    "./islands/ViewSendEvent.tsx": $$$$$8,
+    "./islands/HeaderModals.tsx": $$$$$8,
+    "./islands/HeaderSearchMenu.tsx": $$$$$9,
+    "./islands/ProductImageZoom.tsx": $$$$$6,
+    "./islands/SearchControls.tsx": $$$$$7,
+    "./islands/SendEventButton.tsx": $$$$$3,
+    "./islands/ShippingSimulation.tsx": $$$$$5,
+    "./islands/SliderJS.tsx": $$$$$0,
+    "./islands/ViewSendEvent.tsx": $$$$$2,
   },
   "sections": {
     "$live/sections/Conditional_Beta.tsx": i2$$$$$0,
@@ -187,20 +187,20 @@ const manifest = {
     "$live/sections/PageInclude.tsx": i2$$$$$2,
     "$live/sections/Slot.tsx": i2$$$$$3,
     "$live/sections/UseSlot.tsx": i2$$$$$4,
-    "deco-sites/maratonatech/sections/BannerGrid.tsx": $$$$$$$$4,
-    "deco-sites/maratonatech/sections/BannerPLP.tsx": $$$$$$$$3,
-    "deco-sites/maratonatech/sections/Carousel.tsx": $$$$$$$$13,
-    "deco-sites/maratonatech/sections/CookieConsent.tsx": $$$$$$$$8,
-    "deco-sites/maratonatech/sections/DesignSystem.story.tsx": $$$$$$$$1,
-    "deco-sites/maratonatech/sections/Features.tsx": $$$$$$$$2,
-    "deco-sites/maratonatech/sections/Footer.tsx": $$$$$$$$7,
-    "deco-sites/maratonatech/sections/Header.tsx": $$$$$$$$9,
-    "deco-sites/maratonatech/sections/Highlights.tsx": $$$$$$$$11,
-    "deco-sites/maratonatech/sections/LinkTree.tsx": $$$$$$$$0,
-    "deco-sites/maratonatech/sections/ProductDetails.tsx": $$$$$$$$10,
+    "deco-sites/maratonatech/sections/BannerGrid.tsx": $$$$$$$$5,
+    "deco-sites/maratonatech/sections/BannerPLP.tsx": $$$$$$$$10,
+    "deco-sites/maratonatech/sections/Carousel.tsx": $$$$$$$$8,
+    "deco-sites/maratonatech/sections/CookieConsent.tsx": $$$$$$$$3,
+    "deco-sites/maratonatech/sections/DesignSystem.story.tsx": $$$$$$$$12,
+    "deco-sites/maratonatech/sections/Features.tsx": $$$$$$$$11,
+    "deco-sites/maratonatech/sections/Footer.tsx": $$$$$$$$0,
+    "deco-sites/maratonatech/sections/Header.tsx": $$$$$$$$7,
+    "deco-sites/maratonatech/sections/Highlights.tsx": $$$$$$$$9,
+    "deco-sites/maratonatech/sections/LinkTree.tsx": $$$$$$$$4,
+    "deco-sites/maratonatech/sections/ProductDetails.tsx": $$$$$$$$2,
     "deco-sites/maratonatech/sections/ProductShelf.tsx": $$$$$$$$6,
-    "deco-sites/maratonatech/sections/SearchResult.tsx": $$$$$$$$5,
-    "deco-sites/maratonatech/sections/WhatsApp.tsx": $$$$$$$$12,
+    "deco-sites/maratonatech/sections/SearchResult.tsx": $$$$$$$$13,
+    "deco-sites/maratonatech/sections/WhatsApp.tsx": $$$$$$$$1,
     "deco-sites/std/sections/Analytics.tsx": i2$$$$$5,
     "deco-sites/std/sections/configButterCMS.global.tsx": i2$$$$$6,
     "deco-sites/std/sections/configNuvemShop.tsx": i2$$$$$7,
