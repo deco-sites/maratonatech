@@ -4,8 +4,12 @@
 
 import { DecoManifest } from "$live/types.ts";
 import * as $$$$0 from "./routes/_app.tsx";
-import * as $$$$1 from "./routes/conteudos/F1N1-professor.ts";
-import * as $$$$2 from "./routes/conteudos/F1N1-estudante.ts";
+import * as $$$$1 from "./routes/conteudos/F1N3-professor.ts";
+import * as $$$$2 from "./routes/conteudos/F1N1-professor.ts";
+import * as $$$$3 from "./routes/conteudos/F1N2-professor.ts";
+import * as $$$$4 from "./routes/conteudos/F1N3-estudante.ts";
+import * as $$$$5 from "./routes/conteudos/F1N2-estudante.ts";
+import * as $$$$6 from "./routes/conteudos/F1N1-estudante.ts";
 import * as $$$$$0 from "./islands/SliderJS.tsx";
 import * as $$$$$1 from "./islands/HeaderButton.tsx";
 import * as $$$$$2 from "./islands/ViewSendEvent.tsx";
@@ -161,8 +165,12 @@ const manifest = {
     "./routes/_app.tsx": $$$$0,
     "./routes/_middleware.ts": $live_middleware,
     "./routes/[...catchall].tsx": $live_catchall,
-    "./routes/conteudos/F1N1-estudante.ts": $$$$2,
-    "./routes/conteudos/F1N1-professor.ts": $$$$1,
+    "./routes/conteudos/F1N1-estudante.ts": $$$$6,
+    "./routes/conteudos/F1N1-professor.ts": $$$$2,
+    "./routes/conteudos/F1N2-estudante.ts": $$$$5,
+    "./routes/conteudos/F1N2-professor.ts": $$$$3,
+    "./routes/conteudos/F1N3-estudante.ts": $$$$4,
+    "./routes/conteudos/F1N3-professor.ts": $$$$1,
     "./routes/index.tsx": $live_catchall,
     "./routes/live/_meta.ts": $live_meta,
     "./routes/live/editorData.ts": $live_editorData,
