@@ -147,7 +147,6 @@ function Searchbar({
         </form>
         {variant === "desktop" && <CloseButton />}
       </div>
-      
     </div>
   );
 }
