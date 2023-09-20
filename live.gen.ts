@@ -28,35 +28,35 @@ import * as $$$$21 from "./routes/infografico/F2N2-ciclo3.ts";
 import * as $$$$22 from "./routes/infografico/F2N2-ciclo5.ts";
 import * as $$$$23 from "./routes/infografico/F2N1-ciclo5.ts";
 import * as $$$$24 from "./routes/infografico/F2N3-ciclo5.ts";
-import * as $$$$25 from "./routes/conteudos/F2N2-ciclo8.ts";
-import * as $$$$26 from "./routes/conteudos/F2N2-ciclo1.ts";
-import * as $$$$27 from "./routes/conteudos/F1N3-professor.ts";
-import * as $$$$28 from "./routes/conteudos/F2N1-ciclo4.ts";
-import * as $$$$29 from "./routes/conteudos/F2N1-ciclo2.ts";
-import * as $$$$30 from "./routes/conteudos/F2N3-ciclo7.ts";
-import * as $$$$31 from "./routes/conteudos/F2N3-ciclo6.ts";
-import * as $$$$32 from "./routes/conteudos/F2N2-ciclo7.ts";
-import * as $$$$33 from "./routes/conteudos/F1N1-professor.ts";
-import * as $$$$34 from "./routes/conteudos/F2N2-ciclo2.ts";
-import * as $$$$35 from "./routes/conteudos/F1N2-professor.ts";
-import * as $$$$36 from "./routes/conteudos/F2N1-ciclo8.ts";
-import * as $$$$37 from "./routes/conteudos/F1N3-estudante.ts";
-import * as $$$$38 from "./routes/conteudos/F2N3-ciclo3.ts";
-import * as $$$$39 from "./routes/conteudos/F2N1-ciclo6.ts";
-import * as $$$$40 from "./routes/conteudos/F2N2-ciclo6.ts";
-import * as $$$$41 from "./routes/conteudos/F1N2-estudante.ts";
-import * as $$$$42 from "./routes/conteudos/F2N1-ciclo3.ts";
-import * as $$$$43 from "./routes/conteudos/F2N3-ciclo8.ts";
-import * as $$$$44 from "./routes/conteudos/F2N3-ciclo1.ts";
-import * as $$$$45 from "./routes/conteudos/F2N3-ciclo2.ts";
-import * as $$$$46 from "./routes/conteudos/F2N1-ciclo7.ts";
-import * as $$$$47 from "./routes/conteudos/F2N3-ciclo4.ts";
-import * as $$$$48 from "./routes/conteudos/F2N2-ciclo4.ts";
-import * as $$$$49 from "./routes/conteudos/F2N1-ciclo1.ts";
-import * as $$$$50 from "./routes/conteudos/F2N2-ciclo3.ts";
-import * as $$$$51 from "./routes/conteudos/F1N1-estudante.ts";
-import * as $$$$52 from "./routes/conteudos/F2N2-ciclo5.ts";
-import * as $$$$53 from "./routes/conteudos/F2N1-ciclo5.ts";
+import * as $$$$25 from "./routes/hq/F2N1-ciclo4.ts";
+import * as $$$$26 from "./routes/hq/F2N1-ciclo2.ts";
+import * as $$$$27 from "./routes/hq/F2N1-ciclo8.ts";
+import * as $$$$28 from "./routes/hq/F2N1-ciclo6.ts";
+import * as $$$$29 from "./routes/hq/F2N1-ciclo3.ts";
+import * as $$$$30 from "./routes/hq/F2N1-ciclo7.ts";
+import * as $$$$31 from "./routes/hq/F2N1-ciclo1.ts";
+import * as $$$$32 from "./routes/hq/F2N1-ciclo5.ts";
+import * as $$$$33 from "./routes/conteudos/F2N2-ciclo8.ts";
+import * as $$$$34 from "./routes/conteudos/F2N2-ciclo1.ts";
+import * as $$$$35 from "./routes/conteudos/F1N3-professor.ts";
+import * as $$$$36 from "./routes/conteudos/F2N3-ciclo7.ts";
+import * as $$$$37 from "./routes/conteudos/F2N3-ciclo6.ts";
+import * as $$$$38 from "./routes/conteudos/F2N2-ciclo7.ts";
+import * as $$$$39 from "./routes/conteudos/F1N1-professor.ts";
+import * as $$$$40 from "./routes/conteudos/F2N2-ciclo2.ts";
+import * as $$$$41 from "./routes/conteudos/F1N2-professor.ts";
+import * as $$$$42 from "./routes/conteudos/F1N3-estudante.ts";
+import * as $$$$43 from "./routes/conteudos/F2N3-ciclo3.ts";
+import * as $$$$44 from "./routes/conteudos/F2N2-ciclo6.ts";
+import * as $$$$45 from "./routes/conteudos/F1N2-estudante.ts";
+import * as $$$$46 from "./routes/conteudos/F2N3-ciclo8.ts";
+import * as $$$$47 from "./routes/conteudos/F2N3-ciclo1.ts";
+import * as $$$$48 from "./routes/conteudos/F2N3-ciclo2.ts";
+import * as $$$$49 from "./routes/conteudos/F2N3-ciclo4.ts";
+import * as $$$$50 from "./routes/conteudos/F2N2-ciclo4.ts";
+import * as $$$$51 from "./routes/conteudos/F2N2-ciclo3.ts";
+import * as $$$$52 from "./routes/conteudos/F1N1-estudante.ts";
+import * as $$$$53 from "./routes/conteudos/F2N2-ciclo5.ts";
 import * as $$$$54 from "./routes/conteudos/F2N3-ciclo5.ts";
 import * as $$$$$0 from "./islands/SliderJS.tsx";
 import * as $$$$$1 from "./islands/HeaderButton.tsx";
@@ -213,36 +213,36 @@ const manifest = {
     "./routes/_app.tsx": $$$$0,
     "./routes/_middleware.ts": $live_middleware,
     "./routes/[...catchall].tsx": $live_catchall,
-    "./routes/conteudos/F1N1-estudante.ts": $$$$51,
-    "./routes/conteudos/F1N1-professor.ts": $$$$33,
-    "./routes/conteudos/F1N2-estudante.ts": $$$$41,
-    "./routes/conteudos/F1N2-professor.ts": $$$$35,
-    "./routes/conteudos/F1N3-estudante.ts": $$$$37,
-    "./routes/conteudos/F1N3-professor.ts": $$$$27,
-    "./routes/conteudos/F2N1-ciclo1.ts": $$$$49,
-    "./routes/conteudos/F2N1-ciclo2.ts": $$$$29,
-    "./routes/conteudos/F2N1-ciclo3.ts": $$$$42,
-    "./routes/conteudos/F2N1-ciclo4.ts": $$$$28,
-    "./routes/conteudos/F2N1-ciclo5.ts": $$$$53,
-    "./routes/conteudos/F2N1-ciclo6.ts": $$$$39,
-    "./routes/conteudos/F2N1-ciclo7.ts": $$$$46,
-    "./routes/conteudos/F2N1-ciclo8.ts": $$$$36,
-    "./routes/conteudos/F2N2-ciclo1.ts": $$$$26,
-    "./routes/conteudos/F2N2-ciclo2.ts": $$$$34,
-    "./routes/conteudos/F2N2-ciclo3.ts": $$$$50,
-    "./routes/conteudos/F2N2-ciclo4.ts": $$$$48,
-    "./routes/conteudos/F2N2-ciclo5.ts": $$$$52,
-    "./routes/conteudos/F2N2-ciclo6.ts": $$$$40,
-    "./routes/conteudos/F2N2-ciclo7.ts": $$$$32,
-    "./routes/conteudos/F2N2-ciclo8.ts": $$$$25,
-    "./routes/conteudos/F2N3-ciclo1.ts": $$$$44,
-    "./routes/conteudos/F2N3-ciclo2.ts": $$$$45,
-    "./routes/conteudos/F2N3-ciclo3.ts": $$$$38,
-    "./routes/conteudos/F2N3-ciclo4.ts": $$$$47,
+    "./routes/conteudos/F1N1-estudante.ts": $$$$52,
+    "./routes/conteudos/F1N1-professor.ts": $$$$39,
+    "./routes/conteudos/F1N2-estudante.ts": $$$$45,
+    "./routes/conteudos/F1N2-professor.ts": $$$$41,
+    "./routes/conteudos/F1N3-estudante.ts": $$$$42,
+    "./routes/conteudos/F1N3-professor.ts": $$$$35,
+    "./routes/conteudos/F2N2-ciclo1.ts": $$$$34,
+    "./routes/conteudos/F2N2-ciclo2.ts": $$$$40,
+    "./routes/conteudos/F2N2-ciclo3.ts": $$$$51,
+    "./routes/conteudos/F2N2-ciclo4.ts": $$$$50,
+    "./routes/conteudos/F2N2-ciclo5.ts": $$$$53,
+    "./routes/conteudos/F2N2-ciclo6.ts": $$$$44,
+    "./routes/conteudos/F2N2-ciclo7.ts": $$$$38,
+    "./routes/conteudos/F2N2-ciclo8.ts": $$$$33,
+    "./routes/conteudos/F2N3-ciclo1.ts": $$$$47,
+    "./routes/conteudos/F2N3-ciclo2.ts": $$$$48,
+    "./routes/conteudos/F2N3-ciclo3.ts": $$$$43,
+    "./routes/conteudos/F2N3-ciclo4.ts": $$$$49,
     "./routes/conteudos/F2N3-ciclo5.ts": $$$$54,
-    "./routes/conteudos/F2N3-ciclo6.ts": $$$$31,
-    "./routes/conteudos/F2N3-ciclo7.ts": $$$$30,
-    "./routes/conteudos/F2N3-ciclo8.ts": $$$$43,
+    "./routes/conteudos/F2N3-ciclo6.ts": $$$$37,
+    "./routes/conteudos/F2N3-ciclo7.ts": $$$$36,
+    "./routes/conteudos/F2N3-ciclo8.ts": $$$$46,
+    "./routes/hq/F2N1-ciclo1.ts": $$$$31,
+    "./routes/hq/F2N1-ciclo2.ts": $$$$26,
+    "./routes/hq/F2N1-ciclo3.ts": $$$$29,
+    "./routes/hq/F2N1-ciclo4.ts": $$$$25,
+    "./routes/hq/F2N1-ciclo5.ts": $$$$32,
+    "./routes/hq/F2N1-ciclo6.ts": $$$$28,
+    "./routes/hq/F2N1-ciclo7.ts": $$$$30,
+    "./routes/hq/F2N1-ciclo8.ts": $$$$27,
     "./routes/index.tsx": $live_catchall,
     "./routes/infografico/F2N1-ciclo1.ts": $$$$20,
     "./routes/infografico/F2N1-ciclo2.ts": $$$$4,

@@ -3,7 +3,7 @@ import { Handlers } from "$fresh/server.ts";
 export const handler: Handlers = {
   GET: async () => {
     const html = await Deno.readFile(
-      "./static/conteudos/F2N1-ciclo7/F2N1-ciclo7.html",
+      "./static/hq/F2N1-ciclo4/F2N1-ciclo4.html",
     );
     return new Response(html, {
       headers: {
