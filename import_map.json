@@ -1,18 +1,15 @@
 {
   "imports": {
-    "deco-sites/maratonatech/": "./",
-    "deco-sites/std/": "https://denopkg.com/deco-sites/std@1.13.0/",
-    "$live/": "https://denopkg.com/deco-cx/live@1.20.1/",
-    "deco-sites/fashion/": "./",
-    "partytown/": "https://deno.land/x/partytown@0.2.1/",
-    "$fresh/": "https://deno.land/x/fresh@1.1.4/",
-    "preact": "https://esm.sh/preact@10.13.2",
-    "preact/": "https://esm.sh/preact@10.13.2/",
-    "preact-render-to-string": "https://esm.sh/*preact-render-to-string@6.0.2",
+    "apps/": "https://denopkg.com/deco-cx/apps@0.8.1/",
+    "deco/": "https://denopkg.com/deco-cx/deco@1.36.18/",
+    "$fresh/": "https://denopkg.com/deco-cx/fresh@1.3.6/",
+    "preact": "https://esm.sh/preact@10.15.1",
+    "preact/": "https://esm.sh/preact@10.15.1/",
+    "preact-render-to-string": "https://esm.sh/*preact-render-to-string@6.2.0",
     "@preact/signals": "https://esm.sh/*@preact/signals@1.1.3",
-    "@preact/signals-core": "https://esm.sh/@preact/signals-core@1.2.3",
-    "twind": "https://esm.sh/v96/twind@0.16.17",
-    "twind/": "https://esm.sh/v96/twind@0.16.17/",
-    "std/": "https://deno.land/std@0.181.0/"
+    "@preact/signals-core": "https://esm.sh/@preact/signals-core@1.3.0",
+    "std/": "https://deno.land/std@0.190.0/",
+    "partytown/": "https://denopkg.com/deco-cx/partytown@0.4.3/",
+    "daisyui": "npm:daisyui@3.6.4"
   }
 }
