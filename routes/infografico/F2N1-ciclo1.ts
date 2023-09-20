@@ -16,7 +16,7 @@ export const handler: Handlers = {
       const response = new Response(null, { status: 200, headers });
 
       // Tamanho do buffer a ser lido por vez.
-      const bufferSize = 250000;
+      const bufferSize = 500000;
       const buffer = new Uint8Array(bufferSize);
 
       // Stream do arquivo.
