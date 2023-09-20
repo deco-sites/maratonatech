@@ -4,7 +4,7 @@ export const handler: Handlers = {
   GET: async (_request) => {
     const filePath = "./static/infografico/F2N1-ciclo1/F2N1-ciclo1.html";
 
-    try {      
+    try {
       const headers = new Headers({
         "Content-Type": "text/html; charset=utf-8",
       });
@@ -16,7 +16,7 @@ export const handler: Handlers = {
       const response = new Response(null, { status: 200, headers });
 
       // Tamanho do buffer a ser lido por vez.
-      const bufferSize = 1000000;
+      const bufferSize = 250000;
       const buffer = new Uint8Array(bufferSize);
 
       // Stream do arquivo.
@@ -41,7 +41,7 @@ export const handler: Handlers = {
             }
           },
         }),
-        response
+        response,
       );
     } catch (error) {
       console.error("Erro ao acessar o arquivo:", error);
