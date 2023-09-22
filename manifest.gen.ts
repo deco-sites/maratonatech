@@ -2,9 +2,13 @@
 // This file SHOULD be checked into source version control.
 // This file is automatically updated during development when running `dev.ts`.
 
+import * as $$$$$$0 from "./sections/GeniallyIframe.tsx";
 import * as $$$$$$$$$$$0 from "./apps/site.ts";
 
 const manifest = {
+  "sections": {
+    "deco-sites/maratonatech/sections/GeniallyIframe.tsx": $$$$$$0,
+  },
   "apps": {
     "deco-sites/maratonatech/apps/site.ts": $$$$$$$$$$$0,
   },
