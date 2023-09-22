@@ -56,6 +56,9 @@ import * as $50 from "./routes/infografico/F2N3-ciclo5.ts";
 import * as $51 from "./routes/infografico/F2N3-ciclo6.ts";
 import * as $52 from "./routes/infografico/F2N3-ciclo7.ts";
 import * as $53 from "./routes/infografico/F2N3-ciclo8.ts";
+import * as $54 from "./routes/planodeaula/F2N1.ts";
+import * as $55 from "./routes/planodeaula/F2N2.ts";
+import * as $56 from "./routes/planodeaula/F2N3.ts";
 
 const manifest = {
   routes: {
@@ -113,6 +116,9 @@ const manifest = {
     "./routes/infografico/F2N3-ciclo6.ts": $51,
     "./routes/infografico/F2N3-ciclo7.ts": $52,
     "./routes/infografico/F2N3-ciclo8.ts": $53,
+    "./routes/planodeaula/F2N1.ts": $54,
+    "./routes/planodeaula/F2N2.ts": $55,
+    "./routes/planodeaula/F2N3.ts": $56,
   },
   islands: {},
   baseUrl: import.meta.url,
