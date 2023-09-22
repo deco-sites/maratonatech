@@ -1,0 +1,163 @@
+{
+  "decohub": {
+    "__resolveType": "deco-sites/maratonatech/apps/decohub.ts"
+  },
+  "admin-app": {
+    "resolvables": {
+      "__resolveType": "deco-sites/admin/loaders/state.ts"
+    },
+    "__resolveType": "decohub/apps/admin.ts"
+  },
+  "website": {
+    "seo": {
+      "type": "website",
+      "title": "Maratona Tech",
+      "titleTemplate": "%s | Deco.cx",
+      "descriptionTemplate": "%s | Deco.cx"
+    },
+    "global": [],
+    "routes": [
+      [
+        {
+          "handler": {
+            "value": {
+              "to": "https://maratonatech.associacaocactus.com.br/",
+              "type": "temporary",
+              "__resolveType": "website/handlers/redirect.ts"
+            }
+          },
+          "pathTemplate": "/"
+        }
+      ]
+    ],
+    "__resolveType": "deco-sites/maratonatech/apps/site.ts"
+  },
+  "everyone": {
+    "routes": [
+      {
+        "handler": {
+          "value": {
+            "page": {
+              "__resolveType": "pages-paginade teste-68fa300a5e0a"
+            },
+            "__resolveType": "$live/handlers/fresh.ts"
+          }
+        },
+        "pathTemplate": "/teste"
+      }
+    ],
+    "__resolveType": "$live/flags/everyone.ts"
+  },
+  "configOCC": {
+    "__resolveType": "deco-sites/std/accounts/occ.ts"
+  },
+  "configVNDA": {
+    "__resolveType": "deco-sites/std/accounts/vnda.ts"
+  },
+  "configVTEX": {
+    "account": "bravtexfashionstore",
+    "__resolveType": "deco-sites/std/accounts/vtex.ts",
+    "defaultLocale": "pt-BR",
+    "defaultSalesChannel": "1",
+    "defaultPriceCurrency": "BRL",
+    "defaultHideUnnavailableItems": false
+  },
+  "configYourViews": {
+    "__resolveType": "deco-sites/std/accounts/yourViews.ts"
+  },
+  "./routes/_middleware.ts": {
+    "state": [
+      {
+        "key": "yourViews",
+        "value": {
+          "key": "asd",
+          "token": "men"
+        }
+      },
+      {
+        "key": "configYourViews",
+        "value": {
+          "__resolveType": "configYourViews"
+        }
+      },
+      {
+        "key": "configVTEX",
+        "value": {
+          "__resolveType": "configVTEX"
+        }
+      },
+      {
+        "key": "configVNDA",
+        "value": {
+          "__resolveType": "configVNDA"
+        }
+      },
+      {
+        "key": "configOCC",
+        "value": {
+          "__resolveType": "configOCC"
+        }
+      }
+    ],
+    "__resolveType": "$live/loaders/state.ts"
+  },
+  "./routes/[...catchall].tsx": {
+    "audiences": [
+      {
+        "__resolveType": "everyone"
+      },
+      {
+        "name": "redirect_home",
+        "routes": [
+          {
+            "handler": {
+              "value": {
+                "to": "http://maratonatech.associacaocactus.com.br/",
+                "type": "temporary",
+                "__resolveType": "$live/handlers/redirect.ts"
+              }
+            },
+            "pathTemplate": "/"
+          }
+        ],
+        "matcher": {
+          "__resolveType": "$live/matchers/MatchAlways.ts"
+        },
+        "__resolveType": "$live/flags/audience.ts"
+      }
+    ],
+    "__resolveType": "$live/handlers/routesSelection.ts"
+  },
+  "pages-paginade teste-68fa300a5e0a": {
+    "name": "Pagina de teste",
+    "path": "/teste",
+    "sections": [
+      {
+        "alerts": [],
+        "navItems": [],
+        "searchbar": {
+          "name": "q",
+          "action": "/s",
+          "placeholder": "What are you looking for?"
+        },
+        "configVTEX": null,
+        "suggestions": {},
+        "__resolveType": "deco-sites/maratonatech/sections/Header.tsx"
+      },
+      {
+        "features": [
+          {
+            "icon": "ChevronUp",
+            "title": "teste",
+            "description": "teste"
+          }
+        ],
+        "__resolveType": "deco-sites/maratonatech/sections/Features.tsx"
+      },
+      {
+        "__resolveType": "deco-sites/maratonatech/sections/Footer.tsx"
+      }
+    ],
+    "__resolveType": "$live/pages/LivePage.tsx"
+  }
+}
