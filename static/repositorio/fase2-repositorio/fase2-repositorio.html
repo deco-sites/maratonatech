@@ -1,346 +1,135 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="https://drive.google.com/uc?export=view&id=1LZFCfOzGk-HExEeQE1lnE2r05-vvWmgr" type="image/x-icon">
-    <link rel="shortcut icon" href="https://drive.google.com/uc?export=view&id=1LZFCfOzGk-HExEeQE1lnE2r05-vvWmgr" type="image/x-icon">
-    <title>Repositório de Conteúdos - Fase 2</title>
-    <!-- https://drive.google.com/uc?export=view&id=1LZFCfOzGk-HExEeQE1lnE2r05-vvWmgr -->
-    <style>
+    <title>Página com DaisyUI</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.7.7/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>        
         body {
             background-image: url('https://drive.google.com/uc?export=view&id=13c4TmtUie6iyJ7AiR-9PzzqinWlCAwyn');
             background-size: cover;
             margin: 0;
             height: 100vh;
             display: flex;
+            flex-direction: column;
             justify-content: center;
             align-items: center;
         }
-
-        /* Estilize a caixa (div) */
-        .box {
-            background-color: rgba(255, 255, 255, 0.8);
-            padding: 20px;
-            text-align: center;
-        }
-
-        /* Estilize os botões de nível */
-        .box button {
-            padding: 10px 20px;
-            margin: 5px;
-            font-size: 16px;
-            border: none;
-            background-color: #007bff;
-            color: #fff;
-            cursor: pointer;
-        }
-
-        /* Estilize os botões de conteúdo */
-        .content-buttons button {
-            padding: 10px 20px;
-            margin: 5px;
-            font-size: 16px;
-            border: none;
-            background-color: #007bff;
-            color: #fff;
-            cursor: pointer;
-        }
-
-        /* Estilize os botões de infográfico */
-        .infographic-buttons button {
-            padding: 10px 20px;
-            margin: 5px;
-            font-size: 16px;
-            border: none;
-            background-color: #007bff;
-            color: #fff;
-            cursor: pointer;
-        }
-
-        /* Estilize as colunas */
-        .column-container {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-            gap: 10px;
-            justify-content: center;
-        }
     </style>
 </head>
-
 <body>
-    <div class="box">
-        <button id="nivel1">Nível 1</button>
-        <button id="nivel2">Nível 2</button>
-        <button id="nivel3">Nível 3</button>
-
-        <!-- Conteúdo do Nível 1 -->
-        <div id="nivel1Content" class="content-buttons" style="display: none;">
-            <button onclick="toggleHQ()">HQ</button>
-            <button onclick="toggleInfografico()">Infográfico</button>
-            <div id="hqButtons" class="infographic-buttons" style="display: none;">
-                <!-- Adicione botões de HQ do Nível 1 aqui -->
-                <div class="clearfix">
-                    <div class="column">
-                        <button onclick="redirecionar('/hq/F2N1-ciclo1')">Nível 1 Ciclo 1</button>
-                        <button onclick="redirecionar('/hq/F2N1-ciclo2')">Nível 1 Ciclo 2</button>
-                        <button onclick="redirecionar('/hq/F2N1-ciclo3')">Nível 1 Ciclo 3</button>
-                        <button onclick="redirecionar('/hq/F2N1-ciclo4')">Nível 1 Ciclo 4</button>
-                    </div>
-                    <div class="column">
-                        <button onclick="redirecionar('/hq/F2N1-ciclo5')">Nível 1 Ciclo 5</button>
-                        <button onclick="redirecionar('/hq/F2N1-ciclo6')">Nível 1 Ciclo 6</button>
-                        <button onclick="redirecionar('/hq/F2N1-ciclo7')">Nível 1 Ciclo 7</button>
-                        <button onclick="redirecionar('/hq/F2N1-ciclo8')">Nível 1 Ciclo 8</button>
-                    </div>
-                </div>
+    <div class="min-h-screen flex justify-center items-center">
+        <div class="m-4 p-4 bg-white/50 rounded-lg shadow-lg text-center">
+            <div class="m-2 p-2 bg-black/50 rounded-lg shadow-lg text-center">
+                <p class="text-white font-bold">Selecione o Nível</p>
             </div>
-            <div id="infograficoButtons" class="infographic-buttons" style="display: none;">
-                <!-- Adicione botões de Infográficos do Nível 1 aqui -->
-                <div class="clearfix">
-                    <div class="column">
-                        <button onclick="redirecionar('/infografico/F2N1-ciclo1')">Nível 1 Ciclo 1</button>
-                        <button onclick="redirecionar('/infografico/F2N1-ciclo2')">Nível 1 Ciclo 2</button>
-                        <button onclick="redirecionar('/infografico/F2N1-ciclo3')">Nível 1 Ciclo 3</button>
-                        <button onclick="redirecionar('/infografico/F2N1-ciclo4')">Nível 1 Ciclo 4</button>
-                    </div>
-                    <div class="column">
-                        <button onclick="redirecionar('/infografico/F2N1-ciclo5')">Nível 1 Ciclo 5</button>
-                        <button onclick="redirecionar('/infografico/F2N1-ciclo6')">Nível 1 Ciclo 6</button>
-                        <button onclick="redirecionar('/infografico/F2N1-ciclo7')">Nível 1 Ciclo 7</button>
-                        <button onclick="redirecionar('/infografico/F2N1-ciclo8')">Nível 1 Ciclo 8</button>
-                    </div>
-                </div>
+            <div class="join mb-5">
+                <input id="F2N1" class="join-item btn" type="radio" name="options" aria-label="Nível 1" />
+                <input id="F2N2" class="join-item btn" type="radio" name="options" aria-label="Nível 2" />
+                <input id="F2N3" class="join-item btn" type="radio" name="options" aria-label="Nível 3" />
             </div>
-        </div>
-
-        <!-- Conteúdo do Nível 2 -->
-        <div id="nivel2Content" class="content-buttons" style="display: none;">
-            <button onclick="toggleConteudosNivel2()">Conteúdos</button>
-            <button onclick="toggleInfograficoNivel2()">Infográficos</button>
-            <div id="conteudosButtonsNivel2" class="infographic-buttons" style="display: none;">
-                <div class="clearfix">
-                    <div class="column">
-                        <!-- Adicione botões de Conteúdos do Nível 2 aqui -->
-                        <button onclick="redirecionar('/conteudos/F2N2-ciclo1')">Nível 2 Ciclo 1</button>
-                        <button onclick="redirecionar('/conteudos/F2N2-ciclo2')">Nível 2 Ciclo 2</button>
-                        <button onclick="redirecionar('/conteudos/F2N2-ciclo3')">Nível 2 Ciclo 3</button>
-                        <button onclick="redirecionar('/conteudos/F2N2-ciclo4')">Nível 2 Ciclo 4</button>
-                    </div>
-                </div>
-                <div class="clearfix">
-                    <div class="column">
-                        <button onclick="redirecionar('/conteudos/F2N2-ciclo5')">Nível 2 Ciclo 5</button>
-                        <button onclick="redirecionar('/conteudos/F2N2-ciclo6')">Nível 2 Ciclo 6</button>
-                        <button onclick="redirecionar('/conteudos/F2N2-ciclo7')">Nível 2 Ciclo 7</button>
-                        <button onclick="redirecionar('/conteudos/F2N2-ciclo8')">Nível 2 Ciclo 8</button>
-                    </div>
-                </div>
-            </div>
-            <div id="infograficoButtonsNivel2" class="infographic-buttons" style="display: none;">
-                <div class="clearfix">
-                    <div class="column">
-                        <!-- Adicione botões de Infográficos do Nível 2 aqui -->
-                        <button onclick="redirecionar('/infografico/F2N2-ciclo1')">Nível 2 Ciclo 1</button>
-                        <button onclick="redirecionar('/infografico/F2N2-ciclo2')">Nível 2 Ciclo 2</button>
-                        <button onclick="redirecionar('/infografico/F2N2-ciclo3')">Nível 2 Ciclo 3</button>
-                        <button onclick="redirecionar('/infografico/F2N2-ciclo4')">Nível 2 Ciclo 4</button>
-                    </div>
-                </div>
-                <div class="clearfix">
-                    <div class="column">
-                        <button onclick="redirecionar('/infografico/F2N2-ciclo5')">Nível 2 Ciclo 5</button>
-                        <button onclick="redirecionar('/infografico/F2N2-ciclo6')">Nível 2 Ciclo 6</button>
-                        <button onclick="redirecionar('/infografico/F2N2-ciclo7')">Nível 2 Ciclo 7</button>
-                        <button onclick="redirecionar('/infografico/F2N2-ciclo8')">Nível 2 Ciclo 8</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!-- Conteúdo do Nível 3 -->
-        <div id="nivel3Content" class="content-buttons" style="display: none;">
-            <button onclick="toggleConteudosNivel3()">Conteúdos</button>
-            <button onclick="toggleInfograficoNivel3()">Infográficos</button>
-            <div id="conteudosButtonsNivel3" class="infographic-buttons" style="display: none;">
-                <!-- Adicione botões de Conteúdos do Nível 3 aqui -->
-                <div class="clearfix">
-                    <div class="column">
-                        <button onclick="redirecionar('/conteudos/F2N3-ciclo1')">Nível 3 Ciclo 1</button>
-                        <button onclick="redirecionar('/conteudos/F2N3-ciclo2')">Nível 3 Ciclo 2</button>
-                        <button onclick="redirecionar('/conteudos/F2N3-ciclo3')">Nível 3 Ciclo 3</button>
-                        <button onclick="redirecionar('/conteudos/F2N3-ciclo4')">Nível 3 Ciclo 4</button>
-                    </div>
-                </div>
-                <div class="clearfix">
-                    <div class="column">
-                        <button onclick="redirecionar('/conteudos/F2N3-ciclo5')">Nível 3 Ciclo 5</button>
-                        <button onclick="redirecionar('/conteudos/F2N3-ciclo6')">Nível 3 Ciclo 6</button>
-                        <button onclick="redirecionar('/conteudos/F2N3-ciclo7')">Nível 3 Ciclo 7</button>
-                        <button onclick="redirecionar('/conteudos/F2N3-ciclo8')">Nível 3 Ciclo 8</button>
-                    </div>
-                </div>
-            </div>
-            <div id="infograficoButtonsNivel3" class="infographic-buttons" style="display: none;">
-                <!-- Adicione botões de Infográficos do Nível 3 aqui -->
-                <div class="clearfix">
-                    <div class="column">                        
-                        <button onclick="redirecionar('/infografico/F2N3-ciclo1')">Nível 3 Ciclo 1</button>
-                        <button onclick="redirecionar('/infografico/F2N3-ciclo2')">Nível 3 Ciclo 2</button>
-                        <button onclick="redirecionar('/infografico/F2N3-ciclo3')">Nível 3 Ciclo 3</button>
-                        <button onclick="redirecionar('/infografico/F2N3-ciclo4')">Nível 3 Ciclo 4</button>
-                    </div>
-                </div>
-                <div class="clearfix">
-                    <div class="column">                        
-                        <button onclick="redirecionar('/infografico/F2N3-ciclo5')">Nível 3 Ciclo 5</button>
-                        <button onclick="redirecionar('/infografico/F2N3-ciclo6')">Nível 3 Ciclo 6</button>
-                        <button onclick="redirecionar('/infografico/F2N3-ciclo7')">Nível 3 Ciclo 7</button>
-                        <button onclick="redirecionar('/infografico/F2N3-ciclo8')">Nível 3 Ciclo 8</button>
-                    </div>
-                </div>
+            <div class="space-x-2 mt-4">
+                <!-- Ciclo 1 -->
+                <details class="dropdown mb-28">
+                    <summary id="ciclo1" class="m-1 btn">Ciclo 1</summary>
+                    <ul class="p-1 shadow menu dropdown-content z-[1] bg-base-100 rounded-box w-32">
+                        <li><button id="ciclo-1-conteudo" onclick="handleButtonClick('conteudos')">Conteúdo</button></li>
+                        <li><button id="ciclo-1-conteudo" onclick="handleButtonClick('infografico')">Infográfico</button></li>
+                    </ul>
+                </details>
+                <!-- Ciclo 2 -->
+                <details class="dropdown mb-28">
+                    <summary id="ciclo2" class="m-1 btn">Ciclo 2</summary>
+                    <ul class="p-1 shadow menu dropdown-content z-[1] bg-base-100 rounded-box w-32">
+                        <li><button id="ciclo-2-conteudo" onclick="handleButtonClick('conteudos')">Conteúdo</button></li>
+                        <li><button id="ciclo-2-conteudo" onclick="handleButtonClick('infografico')">Infográfico</button></li>
+                    </ul>
+                </details>
+                <!-- Ciclo 3 -->
+                <details class="dropdown mb-28">
+                   <summary id="ciclo3" class="m-1 btn">Ciclo 3</summary>
+                    <ul class="p-1 shadow menu dropdown-content z-[1] bg-base-100 rounded-box w-32">
+                        <li><button id="ciclo-3-conteudo" onclick="handleButtonClick('conteudos')">Conteúdo</button></li>
+                        <li><button id="ciclo-3-infografico" onclick="handleButtonClick('infografico')">Infográfico</button></li>
+                    </ul>
+                </details>
+                <!-- Ciclo 4 -->
+                <details class="dropdown mb-28">
+                    <summary id="ciclo4" class="m-1 btn">Ciclo 4</summary>
+                    <ul class="p-1 shadow menu dropdown-content z-[1] bg-base-100 rounded-box w-32">
+                        <li><button id="ciclo-4-conteudo" onclick="handleButtonClick('conteudos')">Conteúdo</button></li>
+                        <li><button id="ciclo-4-infografico" onclick="handleButtonClick('infografico')">Infográfico</button></li>
+                    </ul>
+                </details>
+                <!-- Ciclo 5 -->
+                <details class="dropdown mb-28">
+                    <summary id="ciclo5" class="m-1 btn">Ciclo 5</summary>
+                    <ul class="p-1 shadow menu dropdown-content z-[1] bg-base-100 rounded-box w-32">
+                        <li><button id="ciclo-5-conteudo" onclick="handleButtonClick('conteudos')">Conteúdo</button></li>
+                        <li><button id="ciclo-5-infografico" onclick="handleButtonClick('infografico')">Infográfico</button></li>
+                    </ul>
+                </details>
+                <!-- Ciclo 6 -->
+                <details class="dropdown mb-28">
+                    <summary id="ciclo6"  class="m-1 btn">Ciclo 6</summary>
+                    <ul class="p-1 shadow menu dropdown-content z-[1] bg-base-100 rounded-box w-32">
+                        <li><button id="ciclo-6-conteudo" onclick="handleButtonClick('conteudos')">Conteúdo</button></li>
+                        <li><button id="ciclo-6-infografico" onclick="handleButtonClick('infografico')">Infográfico</button></li>
+                    </ul>
+                </details>
+                <!-- Ciclo 7 -->
+                <details class="dropdown mb-28">
+                    <summary id="ciclo7" class="m-1 btn">Ciclo 7</summary>
+                    <ul class="p-1 shadow menu dropdown-content z-[1] bg-base-100 rounded-box w-32">
+                        <li><button id="ciclo-7-conteudo" onclick="handleButtonClick('conteudos')">Conteúdo</button></li>
+                        <li><button id="ciclo-7-infografico" onclick="handleButtonClick('infografico')">Infográfico</button></li>
+                    </ul>
+                </details>
+                <!-- Ciclo 8 -->
+                <details class="dropdown mb-28">
+                    <summary id="ciclo8"  class="m-1 btn">Ciclo 8</summary>
+                    <ul class="p-1 shadow menu dropdown-content z-[1] bg-base-100 rounded-box w-32">
+                        <li><button id="ciclo-8-conteudo" onclick="handleButtonClick('conteudos')">Conteúdo</button></li>
+                        <li><button id="ciclo-8-infografico" onclick="handleButtonClick('infografico')">Infográfico</button></li>
+                    </ul>
+                </details>
             </div>
         </div>
     </div>
-
     <script>
-        // Função para mostrar/ocultar os botões de conteúdo com base no botão de nível clicado
-        function toggleContent(nivel) {
-            // Oculta todos os botões de conteúdo
-            document.getElementById("nivel1Content").style.display = "none";
-            document.getElementById("nivel2Content").style.display = "none";
-            document.getElementById("nivel3Content").style.display = "none";
+        const dropdowns = document.querySelectorAll(".dropdown");
 
-            // Oculta os botões de ciclo correspondentes ao botão de nível clicado
-            document.getElementById("hqButtons").style.display = "none";
-            document.getElementById("infograficoButtons").style.display = "none";
-            document.getElementById("conteudosButtonsNivel2").style.display = "none";
-            document.getElementById("infograficoButtonsNivel2").style.display = "none";
-            document.getElementById("conteudosButtonsNivel3").style.display = "none";
-            document.getElementById("infograficoButtonsNivel3").style.display = "none";
-
-            // Mostra os botões de conteúdo correspondentes ao botão de nível clicado
-            document.getElementById(nivel + "Content").style.display = "block";
-        }
-
-        // Função para mostrar/ocultar os botões de infográfico no Nível 1
-        function toggleHQ() {
-            var hqButtons = document.getElementById("hqButtons");
-            var infograficoButtons = document.getElementById("infograficoButtons");
-
-            // Verifique se os botões de HQ estão visíveis
-            if (hqButtons.style.display === "none") {
-                // Se estiverem ocultos, mostre os botões de HQ e oculte os botões de infográfico
-                hqButtons.style.display = "block";
-                infograficoButtons.style.display = "none";
-            } else {
-                // Se estiverem visíveis, oculte os botões de HQ
-                hqButtons.style.display = "none";
-            }
-        }
-
-        function toggleInfografico() {
-            var hqButtons = document.getElementById("hqButtons");
-            var infograficoButtons = document.getElementById("infograficoButtons");
-
-            // Verifique se os botões de infográfico estão visíveis
-            if (infograficoButtons.style.display === "none") {
-                // Se estiverem ocultos, mostre os botões de infográfico e oculte os botões de HQ
-                infograficoButtons.style.display = "block";
-                hqButtons.style.display = "none";
-            } else {
-                // Se estiverem visíveis, oculte os botões de infográfico
-                infograficoButtons.style.display = "none";
-            }
-        }
-
-        // Função para mostrar/ocultar os botões de conteúdo do Nível 2
-        function toggleConteudosNivel2() {
-            var conteudosButtons = document.getElementById("conteudosButtonsNivel2");
-            var infograficoButtons = document.getElementById("infograficoButtonsNivel2");
-
-            // Verifique se os botões de Conteúdos do Nível 2 estão visíveis
-            if (conteudosButtons.style.display === "none") {
-                // Se estiverem ocultos, mostre os botões de Conteúdos e oculte os botões de Infográficos
-                conteudosButtons.style.display = "block";
-                infograficoButtons.style.display = "none";
-            } else {
-                // Se estiverem visíveis, oculte os botões de Conteúdos do Nível 2
-                conteudosButtons.style.display = "none";
-            }
-        }
-
-        function toggleInfograficoNivel2() {
-            var conteudosButtons = document.getElementById("conteudosButtonsNivel2");
-            var infograficoButtons = document.getElementById("infograficoButtonsNivel2");
-
-            // Verifique se os botões de Infográficos do Nível 2 estão visíveis
-            if (infograficoButtons.style.display === "none") {
-                // Se estiverem ocultos, mostre os botões de Infográficos e oculte os botões de Conteúdos
-                infograficoButtons.style.display = "block";
-                conteudosButtons.style.display = "none";
-            } else {
-                // Se estiverem visíveis, oculte os botões de Infográficos do Nível 2
-                infograficoButtons.style.display = "none";
-            }
-        }
-
-        // Função para mostrar/ocultar os botões de conteúdo do Nível 3
-        function toggleConteudosNivel3() {
-            var conteudosButtons = document.getElementById("conteudosButtonsNivel3");
-            var infograficoButtons = document.getElementById("infograficoButtonsNivel3");
-
-            // Verifique se os botões de Conteúdos do Nível 3 estão visíveis
-            if (conteudosButtons.style.display === "none") {
-                // Se estiverem ocultos, mostre os botões de Conteúdos e oculte os botões de Infográficos
-                conteudosButtons.style.display = "block";
-                infograficoButtons.style.display = "none";
-            } else {
-                // Se estiverem visíveis, oculte os botões de Conteúdos do Nível 3
-                conteudosButtons.style.display = "none";
-            }
-        }
-
-        function toggleInfograficoNivel3() {
-            var conteudosButtons = document.getElementById("conteudosButtonsNivel3");
-            var infograficoButtons = document.getElementById("infograficoButtonsNivel3");
-
-            // Verifique se os botões de Infográficos do Nível 3 estão visíveis
-            if (infograficoButtons.style.display === "none") {
-                // Se estiverem ocultos, mostre os botões de Infográficos e oculte os botões de Conteúdos
-                infograficoButtons.style.display = "block";
-                conteudosButtons.style.display = "none";
-            } else {
-                // Se estiverem visíveis, oculte os botões de Infográficos do Nível 3
-                infograficoButtons.style.display = "none";
-            }
-        }
-
-        // Função para redirecionar para as páginas correspondentes
-        function redirecionar(rota) {
-            var urlBase = window.location.origin;
-
-            // Constrói a URL completa, incluindo a rota personalizada
-            var urlCompleta = urlBase + rota;
-
-            // Redireciona o navegador para a URL construída
-            window.location.href = urlCompleta;
-        }
-
-        // Adiciona eventos de clique aos botões de nível
-        document.getElementById("nivel1").addEventListener("click", function () {
-            toggleContent("nivel1");
+        dropdowns.forEach((dropdown, index) => {
+            dropdown.addEventListener("click", () => {
+                // Fechar todos os dropdowns, exceto o atual
+                dropdowns.forEach((otherDropdown, otherIndex) => {
+                    if (index !== otherIndex) {
+                        otherDropdown.removeAttribute("open");
+                    }
+                });
+            });
         });
 
-        document.getElementById("nivel2").addEventListener("click", function () {
-            toggleContent("nivel2");
-        });
-
-        document.getElementById("nivel3").addEventListener("click", function () {
-            toggleContent("nivel3");
-        });
+        function handleButtonClick(content) {
+            const selectedLevel = document.querySelector('input[name="options"]:checked');
+            let url
+            if (selectedLevel) {
+                const levelId = selectedLevel.id;
+                const selectedCycle = document.querySelector('.dropdown[open] summary').id
+                const linkId = content.toLowerCase().replace(/ /g, "-");                
+                if(levelId === "F2N1" && linkId === 'conteudos')
+                {
+                    url = `/hq/${levelId}-${selectedCycle.toLowerCase()}`;
+                }else {
+                    url = `/${linkId}/${levelId}-${selectedCycle.toLowerCase()}`;
+                }
+                window.location.pathname = url;
+            } else {
+                alert("Selecione um nível primeiro.");
+            }
+        }
     </script>
 </body>
-
 </html>
