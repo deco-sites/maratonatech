@@ -1,8 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Repositório de links de conteudos da segunda fase do maratona tech">
     <title>Repositório de Conteúdos - Fase 2</title>
     <link rel="icon" href="https://drive.google.com/uc?export=view&id=1LZFCfOzGk-HExEeQE1lnE2r05-vvWmgr"
@@ -11,7 +12,7 @@
         type="image/x-icon">
     <link href="https://cdn.jsdelivr.net/npm/daisyui@3.7.7/dist/full.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
-    <style>        
+    <style>
         body {
             background-image: url('https://drive.google.com/uc?export=view&id=17waCVWLCxdITGe7vKJPxaAAMFOzUb7Bm');
             background-size: cover;
@@ -24,6 +25,7 @@
         }
     </style>
 </head>
+
 <body>
     <div class="min-h-screen flex justify-center items-center">
         <div class="m-4 p-4 bg-white/50 rounded-lg shadow-lg text-center">
@@ -40,66 +42,90 @@
                 <details class="dropdown mb-28">
                     <summary id="ciclo1" class="m-1 btn">Ciclo 1</summary>
                     <ul class="p-1 shadow menu dropdown-content z-[1] bg-base-100 rounded-box w-32">
-                        <li><button id="ciclo-1-conteudo" onclick="handleButtonClick('conteudos')">Conteúdo</button></li>
-                        <li><button id="ciclo-1-conteudo" onclick="handleButtonClick('infografico')">Infográfico</button></li>
+                        <li><button id="ciclo-1-conteudo" onclick="handleButtonClick('conteudos')">Conteúdo</button>
+                        </li>
+                        <li><button id="ciclo-1-conteudo"
+                                onclick="handleButtonClick('infografico')">Infográfico</button></li>
+                        <li><button id="ciclo-1-video" onclick="handleButtonClick('video')">Video</button></li>
                     </ul>
                 </details>
                 <!-- Ciclo 2 -->
                 <details class="dropdown mb-28">
                     <summary id="ciclo2" class="m-1 btn">Ciclo 2</summary>
                     <ul class="p-1 shadow menu dropdown-content z-[1] bg-base-100 rounded-box w-32">
-                        <li><button id="ciclo-2-conteudo" onclick="handleButtonClick('conteudos')">Conteúdo</button></li>
-                        <li><button id="ciclo-2-conteudo" onclick="handleButtonClick('infografico')">Infográfico</button></li>
+                        <li><button id="ciclo-2-conteudo" onclick="handleButtonClick('conteudos')">Conteúdo</button>
+                        </li>
+                        <li><button id="ciclo-2-conteudo"
+                                onclick="handleButtonClick('infografico')">Infográfico</button></li>
+                                <li><button id="ciclo-1-video" onclick="handleButtonClick('video')">Video</button></li>
                     </ul>
                 </details>
                 <!-- Ciclo 3 -->
                 <details class="dropdown mb-28">
-                   <summary id="ciclo3" class="m-1 btn">Ciclo 3</summary>
+                    <summary id="ciclo3" class="m-1 btn">Ciclo 3</summary>
                     <ul class="p-1 shadow menu dropdown-content z-[1] bg-base-100 rounded-box w-32">
-                        <li><button id="ciclo-3-conteudo" onclick="handleButtonClick('conteudos')">Conteúdo</button></li>
-                        <li><button id="ciclo-3-infografico" onclick="handleButtonClick('infografico')">Infográfico</button></li>
+                        <li><button id="ciclo-3-conteudo" onclick="handleButtonClick('conteudos')">Conteúdo</button>
+                        </li>
+                        <li><button id="ciclo-3-infografico"
+                                onclick="handleButtonClick('infografico')">Infográfico</button></li>
+                                <li><button id="ciclo-1-video" onclick="handleButtonClick('video')">Video</button></li>
                     </ul>
                 </details>
                 <!-- Ciclo 4 -->
                 <details class="dropdown mb-28">
                     <summary id="ciclo4" class="m-1 btn">Ciclo 4</summary>
                     <ul class="p-1 shadow menu dropdown-content z-[1] bg-base-100 rounded-box w-32">
-                        <li><button id="ciclo-4-conteudo" onclick="handleButtonClick('conteudos')">Conteúdo</button></li>
-                        <li><button id="ciclo-4-infografico" onclick="handleButtonClick('infografico')">Infográfico</button></li>
+                        <li><button id="ciclo-4-conteudo" onclick="handleButtonClick('conteudos')">Conteúdo</button>
+                        </li>
+                        <li><button id="ciclo-4-infografico"
+                                onclick="handleButtonClick('infografico')">Infográfico</button></li>
+                                <li><button id="ciclo-1-video" onclick="handleButtonClick('video')">Video</button></li>
                     </ul>
                 </details>
                 <!-- Ciclo 5 -->
-                <details class="dropdown mb-28">
+                <!-- <details class="dropdown mb-28">
                     <summary id="ciclo5" class="m-1 btn">Ciclo 5</summary>
                     <ul class="p-1 shadow menu dropdown-content z-[1] bg-base-100 rounded-box w-32">
-                        <li><button id="ciclo-5-conteudo" onclick="handleButtonClick('conteudos')">Conteúdo</button></li>
-                        <li><button id="ciclo-5-infografico" onclick="handleButtonClick('infografico')">Infográfico</button></li>
+                        <li><button id="ciclo-5-conteudo" onclick="handleButtonClick('conteudos')">Conteúdo</button>
+                        </li>
+                        <li><button id="ciclo-5-infografico"
+                                onclick="handleButtonClick('infografico')">Infográfico</button></li>
+                                <li><button id="ciclo-1-video" onclick="handleButtonClick('video')">Video</button></li>
                     </ul>
-                </details>
+                </details> -->
                 <!-- Ciclo 6 -->
-                <details class="dropdown mb-28">
-                    <summary id="ciclo6"  class="m-1 btn">Ciclo 6</summary>
+                <!-- <details class="dropdown mb-28">
+                    <summary id="ciclo6" class="m-1 btn">Ciclo 6</summary>
                     <ul class="p-1 shadow menu dropdown-content z-[1] bg-base-100 rounded-box w-32">
-                        <li><button id="ciclo-6-conteudo" onclick="handleButtonClick('conteudos')">Conteúdo</button></li>
-                        <li><button id="ciclo-6-infografico" onclick="handleButtonClick('infografico')">Infográfico</button></li>
+                        <li><button id="ciclo-6-conteudo" onclick="handleButtonClick('conteudos')">Conteúdo</button>
+                        </li>
+                        <li><button id="ciclo-6-infografico"
+                                onclick="handleButtonClick('infografico')">Infográfico</button></li>
+                                <li><button id="ciclo-1-video" onclick="handleButtonClick('video')">Video</button></li>
                     </ul>
-                </details>
+                </details> -->
                 <!-- Ciclo 7 -->
-                <details class="dropdown mb-28">
+                <!-- <details class="dropdown mb-28">
                     <summary id="ciclo7" class="m-1 btn">Ciclo 7</summary>
                     <ul class="p-1 shadow menu dropdown-content z-[1] bg-base-100 rounded-box w-32">
-                        <li><button id="ciclo-7-conteudo" onclick="handleButtonClick('conteudos')">Conteúdo</button></li>
-                        <li><button id="ciclo-7-infografico" onclick="handleButtonClick('infografico')">Infográfico</button></li>
+                        <li><button id="ciclo-7-conteudo" onclick="handleButtonClick('conteudos')">Conteúdo</button>
+                        </li>
+                        <li><button id="ciclo-7-infografico"
+                                onclick="handleButtonClick('infografico')">Infográfico</button></li>
+                                <li><button id="ciclo-1-video" onclick="handleButtonClick('video')">Video</button></li>
                     </ul>
-                </details>
+                </details> -->
                 <!-- Ciclo 8 -->
-                <details class="dropdown mb-28">
-                    <summary id="ciclo8"  class="m-1 btn">Ciclo 8</summary>
+                <!-- <details class="dropdown mb-28">
+                    <summary id="ciclo8" class="m-1 btn">Ciclo 8</summary>
                     <ul class="p-1 shadow menu dropdown-content z-[1] bg-base-100 rounded-box w-32">
-                        <li><button id="ciclo-8-conteudo" onclick="handleButtonClick('conteudos')">Conteúdo</button></li>
-                        <li><button id="ciclo-8-infografico" onclick="handleButtonClick('infografico')">Infográfico</button></li>
+                        <li><button id="ciclo-8-conteudo" onclick="handleButtonClick('conteudos')">Conteúdo</button>
+                        </li>
+                        <li><button id="ciclo-8-infografico"
+                                onclick="handleButtonClick('infografico')">Infográfico</button></li>
+                                <li><button id="ciclo-1-video" onclick="handleButtonClick('video')">Video</button></li>
                     </ul>
-                </details>
+                </details> -->
             </div>
         </div>
     </div>
@@ -118,23 +144,62 @@
         });
 
         function handleButtonClick(content) {
+
+            var listVideos = {
+                //nivel 1
+                'F2N1-ciclo1': 'https://www.youtube.com/watch?v=g5d2f0AYYJM&list=PL6GqU0I-9u0IXy-AIB6WijHsvkIXCYcj9&index=1&ab_channel=Educactus',
+                'F2N1-ciclo2': 'https://www.youtube.com/watch?v=nrEcJpc8HnE&list=PL6GqU0I-9u0IXy-AIB6WijHsvkIXCYcj9&index=2&ab_channel=Educactus',
+                'F2N1-ciclo3': 'https://www.youtube.com/watch?v=frJmpEnWmkA&list=PL6GqU0I-9u0IXy-AIB6WijHsvkIXCYcj9&index=3&ab_channel=Educactus',
+                'F2N1-ciclo4': 'https://www.youtube.com/watch?v=XxdrL1HTlyE&list=PL6GqU0I-9u0IXy-AIB6WijHsvkIXCYcj9&index=4&ab_channel=Educactus',
+                'F2N1-ciclo5': 'https://www.youtube.com/watch?v=OTnAQwYUFDc&list=PL6GqU0I-9u0IXy-AIB6WijHsvkIXCYcj9&index=5&ab_channel=Educactus',
+                'F2N1-ciclo6': 'https://www.youtube.com/watch?v=OUr1gigG0n8&list=PL6GqU0I-9u0IXy-AIB6WijHsvkIXCYcj9&index=6&ab_channel=Educactus',
+                'F2N1-ciclo7': 'https://www.youtube.com/watch?v=5JWiqbxwjrI&list=PL6GqU0I-9u0IXy-AIB6WijHsvkIXCYcj9&index=7&ab_channel=Educactus',
+                'F2N1-ciclo8': 'https://www.youtube.com/watch?v=C9QdCxImPts&list=PL6GqU0I-9u0IXy-AIB6WijHsvkIXCYcj9&index=8&ab_channel=Educactus',
+                //nivel 2
+                'F2N2-ciclo1': 'https://www.youtube.com/watch?v=JqgURYiiP_Q&list=PL6GqU0I-9u0IXy-AIB6WijHsvkIXCYcj9&index=9&ab_channel=Educactus    ',
+                'F2N2-ciclo2': 'https://www.youtube.com/watch?v=SVtrLr5elRo&list=PL6GqU0I-9u0IXy-AIB6WijHsvkIXCYcj9&index=10&ab_channel=Educactus',
+                'F2N2-ciclo3': 'https://www.youtube.com/watch?v=Al756qaQjFA&list=PL6GqU0I-9u0IXy-AIB6WijHsvkIXCYcj9&index=11&ab_channel=Educactus',
+                'F2N2-ciclo4': 'https://www.youtube.com/watch?v=doD3yc9PZNo&list=PL6GqU0I-9u0IXy-AIB6WijHsvkIXCYcj9&index=12&ab_channel=Educactus',
+                'F2N2-ciclo5': 'https://www.youtube.com/watch?v=HBLRO_bKZj4&list=PL6GqU0I-9u0IXy-AIB6WijHsvkIXCYcj9&index=13&ab_channel=Educactus',
+                'F2N2-ciclo6': 'https://www.youtube.com/watch?v=FyRafHlbYxQ&list=PL6GqU0I-9u0IXy-AIB6WijHsvkIXCYcj9&index=14&ab_channel=Educactus',
+                'F2N2-ciclo7': '',
+                'F2N2-ciclo8': '',
+                //nivel 3
+                'F2N3-ciclo1': 'https://www.youtube.com/watch?v=0CFsx1rj6Fk&list=PL6GqU0I-9u0IXy-AIB6WijHsvkIXCYcj9&index=15&ab_channel=Educactus',
+                'F2N3-ciclo2': 'https://www.youtube.com/watch?v=0onDuB6fw0g&list=PL6GqU0I-9u0IXy-AIB6WijHsvkIXCYcj9&index=16&ab_channel=Educactus',
+                'F2N3-ciclo3': 'https://www.youtube.com/watch?v=qJRih3T_djQ&list=PL6GqU0I-9u0IXy-AIB6WijHsvkIXCYcj9&index=18&ab_channel=Educactus',
+                'F2N3-ciclo4': 'https://www.youtube.com/watch?v=vLM-wMKqcQM&list=PL6GqU0I-9u0IXy-AIB6WijHsvkIXCYcj9&index=18&ab_channel=Educactus',
+                'F2N3-ciclo5': 'https://www.youtube.com/watch?v=rRLuL3sX9Z0&list=PL6GqU0I-9u0IXy-AIB6WijHsvkIXCYcj9&index=19&ab_channel=Educactus',
+                'F2N3-ciclo6': 'https://www.youtube.com/watch?v=EMeeU-ElsQ0&list=PL6GqU0I-9u0IXy-AIB6WijHsvkIXCYcj9&index=20&ab_channel=Educactus',
+                'F2N3-ciclo7': '',
+                'F2N3-ciclo8': '',
+
+
+
+            };
+
             const selectedLevel = document.querySelector('input[name="options"]:checked');
-            let url
             if (selectedLevel) {
                 const levelId = selectedLevel.id;
                 const selectedCycle = document.querySelector('.dropdown[open] summary').id
-                const linkId = content.toLowerCase().replace(/ /g, "-");                
-                if(levelId === "F2N1" && linkId === 'conteudos')
-                {
-                    url = `/hq/${levelId}-${selectedCycle.toLowerCase()}`;
-                }else {
-                    url = `/${linkId}/${levelId}-${selectedCycle.toLowerCase()}`;
+                const linkId = content.toLowerCase().replace(/ /g, "-");
+                if (levelId === "F2N1" && linkId === 'conteudos') {
+                    window.location.pathname = `/hq/${levelId}-${selectedCycle.toLowerCase()}`;
+                } else if (content === "video") {
+                    const chave = `${levelId}-${selectedCycle.toLowerCase()}`;
+                    const url = listVideos[chave];
+                    window.location.href = url;
                 }
-                window.location.pathname = url;
+                else {
+                    window.location.pathname = `/${linkId}/${levelId}-${selectedCycle.toLowerCase()}`;
+                }
+
             } else {
                 alert("Selecione um nível primeiro.");
             }
         }
+
     </script>
 </body>
+
 </html>
