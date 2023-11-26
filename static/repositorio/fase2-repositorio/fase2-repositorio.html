@@ -30,6 +30,9 @@
     <div class="min-h-screen flex justify-center items-center">
         <div class="m-4 p-4 bg-white/50 rounded-lg shadow-lg text-center">
             <div class="m-2 p-2 bg-black/50 rounded-lg shadow-lg text-center">
+                <p class="text-white font-bold">Conteúdos Fase 2</p>
+            </div>
+            <div class="m-2 p-2 bg-black/50 rounded-lg shadow-lg text-center">
                 <p class="text-white font-bold">Selecione o Nível</p>
             </div>
             <div class="join mb-5">
@@ -126,6 +129,9 @@
                                 <li><button id="ciclo-1-video" onclick="handleButtonClick('video')">Video</button></li>
                     </ul>
                 </details>
+                <div class="space-x-2 mt-4">
+                    <button id="conteudosFase1" class="m-1 btn" onclick="redirectToFase1()">Ir Para Fase 1</button>
+                </div>
             </div>
         </div>
     </div>
@@ -142,6 +148,10 @@
                 });
             });
         });
+
+        function redirectToFase1() {
+            window.location.pathname = '/fase1-repositorio';
+        }
 
         function handleButtonClick(content) {
 
@@ -176,7 +186,7 @@
 
 
 
-            };
+            };           
 
             const selectedLevel = document.querySelector('input[name="options"]:checked');
             if (selectedLevel) {
